@@ -14,7 +14,7 @@ app.post("/" , function(req, res){
     var wt = Number(req.body.weight);
     var ht = Number(req.body.height);
     var BMI = wt/(ht*ht);
-    res.send("Your BMI is "+ BMI);
+    res.send("Your BMI is "+ BMI +" kg/m^2");
 });
 
 app.listen(1500,function(){
